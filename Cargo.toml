@@ -1,0 +1,3 @@
+[workspace]
+members = ["pikacze_server"]
+resolver = "2"
