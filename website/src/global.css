@@ -1,0 +1,22 @@
+body {
+	background-color: yellow;
+}
+
+#indexMainContent {
+	display: grid;
+
+	grid-template-columns: 1fr minmax(400px, 1000px) 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+#uploadPhotoButton {
+	font-size: 6em;
+	border: 1px solid black;
+	border-radius: 0.5em;
+	padding: 0.25em 1em 0.25em 1em;
+
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+
