@@ -1,5 +1,9 @@
+:root {
+	--pikachu-yellow: rgba(246, 200, 82, 1.0);
+}
+
 body {
-	background-color: yellow;
+	background-color: var(--pikachu-yellow);
 }
 
 #indexMainContent {
@@ -9,14 +13,36 @@ body {
 	grid-template-rows: 1fr 1fr 1fr;
 }
 
+input[type="file"] {
+	display: none;
+}
+
+form {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
 #uploadPhotoButton {
 	font-size: 6em;
 	border: 1px solid black;
 	border-radius: 0.5em;
 	padding: 0.25em 1em 0.25em 1em;
 
-	grid-column: 2/3;
-	grid-row: 2/3;
+	cursor: pointer;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+
+	text-align: center;
+
+	/*color: var(--main-color);
+	background-color: var(--main-bg-secondary-color);
+	border: 1px solid var(--main-bg-color);*/
+	border: 1px solid black;
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 5px;
+
+	font-family: "Cascadia Code", monospace;
+	font-size: 12pt;
 }
-
-
