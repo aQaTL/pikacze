@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "check_jsdoc": "npx jsdoc index.js",
-    "check": "npx tsc"
+    "check": "npx tsc",
+    "serve": "basic-http-server src/"
   },
   "author": "",
   "license": "MIT",
